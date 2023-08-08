@@ -1,0 +1,471 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EDF0F6;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+label {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.main {
+    width: 85vw;
+    height: 657px;
+    margin: 30px auto;
+    background-color: #FAFBFF;
+    border-radius: 10px;
+    padding: 30px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.settings,
+.addition {
+    height: 100%;
+    width: 47%;
+}
+
+.settings__cleaning-type,
+.settings__room-area {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+
+.settings__cleaning-type select {
+    background-color: #FCF4E8;
+    color: #c0945f;
+    border: none;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.settings__cleaning-type div {
+    color: #98A4B0;
+    font-size: 18px;
+    display: flex;
+}
+
+.settings__cleaning-type div span {
+    color: black;
+    font-weight: 600;
+}
+
+.settings__cleaning-type div a,
+.addition__total div:nth-child(2) a {
+    margin: 0 0 0 auto;
+    color: #c0945f;
+    text-decoration: none;
+    border-bottom: 2px dashed #c0945f;
+    font-size: 16px;
+}
+
+.area-range {
+    display: flex;
+    flex-direction: column;
+    width: 74%;
+    margin-right: 30px;
+}
+
+.area-range span {
+    color: #98A4B0;
+    font-size: 16px;
+}
+
+.area-range__titles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.room-area__container {
+    display: flex;
+    margin-top: 16px;
+    justify-content: space-between;
+}
+
+.room-area__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 8px 0;
+}
+
+.room-area__input::-webkit-slider-runnable-track {
+    border-radius: 8px/100%;
+    height: 4px;
+    background-color: #C1EEE0;
+}
+
+.room-area__input::-webkit-slider-thumb {
+    background: #07BD86;
+    border-radius: 15px/100%;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    -webkit-appearance: none;
+    margin-top: -6px;
+}
+
+.area-input {
+    display: flex;
+    align-items: flex-end;
+    color: #98A4B0;
+    font-size: 16px;
+}
+
+.room-area__input-2 {
+    padding: 10px 13px;
+    font-size: 18px;
+    width: 52px;
+    text-align: center;
+    border: 1px solid #C1EEE0;
+    border-radius: 8px;
+    margin: 0 8px;
+}
+
+.settings__charity {
+    display: flex;
+    background-color: #E5F9FF;
+    border-radius: 8px;
+}
+
+.settings__charity__text {
+    padding: 23px 30px 0;
+    width: 50%;
+}
+
+.settings__charity__text h3 {
+    margin-bottom: 9px;
+}
+
+.settings__charity__text p {
+    color: #98A4B0;
+    font-size: 16px;
+}
+
+.settings__charity__img {
+    display: block;
+    width: 50%;
+}
+
+.settings__charity__img img {
+    width: 100%;
+    display: block;
+}
+
+.addition__additional-services table {
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.addition__additional-services tr {
+    display: flex;
+    padding: 2px 0 10px;
+    border-bottom: 2px solid #aed5e1;
+    margin-bottom: 10px;
+}
+
+.addition__additional-services tr td:first-child {
+    width: 62%;
+    color: #98A4B0;
+}
+
+.addition__additional-services tr td:nth-child(3) {
+    margin: 0 0 0 auto;
+    display: block;
+}
+
+.addition__additional-services button {
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    padding: 0 12px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn_extreme {
+    color: #98A4B0;
+}
+
+.btn_black {
+    color: black;
+}
+
+.addition__total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addition__total div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+.addition__total div:nth-child(2) button {
+    margin-top: 8px;
+    background-color: #07BD86;
+    border: none;
+    padding: 12px 16px;
+    color: #EDF0F6;
+    border-radius: 8px;
+    width: 200px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.addition__total-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #98A4B0;
+}
+
+.addition__total-value {
+    font-size: 24px;
+}
+
+@media(max-width: 1348px) {
+    .settings__charity__text h3 {
+        margin-bottom: 6px;
+        font-size: 16px;
+    }
+
+    .settings__charity__text p {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 1280px) {
+
+    .settings__charity__text {
+        padding: 14px 30px 0;
+    }
+
+    .addition__additional-services td {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 1130px) {
+
+    label {
+        font-size: 20px;
+    }
+
+    .settings__cleaning-type select {
+        font-size: 15px;
+    }
+
+    .settings__cleaning-type div {
+        font-size: 14px;
+    }
+
+    .settings__cleaning-type div a,
+    .addition__total div:nth-child(2) a {
+        font-size: 13px;
+    }
+
+    .room-area__input::-webkit-slider-runnable-track {
+        border-radius: 4px/100%;
+        height: 3px;
+    }
+
+    .room-area__input::-webkit-slider-thumb {
+        border-radius: 10px/100%;
+        width: 10px;
+        height: 10px;
+        margin-top: -4px;
+    }
+
+    .room-area__input-2 {
+        font-size: 16px;
+    }
+
+    .area-range span {
+        font-size: 14px;
+    }
+
+    .settings__charity__text h3 {
+        font-size: 16px;
+    }
+
+    .settings__charity__text p {
+        font-size: 9px;
+    }
+
+    .addition__additional-services td {
+        font-size: 12px;
+    }
+
+    .addition__additional-services tr {
+        padding-bottom: 4px;
+    }
+
+    .addition__additional-services button {
+        font-size: 16px;
+    }
+
+    .addition__total-title {
+        font-size: 20px;
+    }
+
+    .addition__total-value {
+        font-size: 20px;
+    }
+
+    .addition__total div:nth-child(2) button {
+        width: 143px;
+    }
+
+    .main {
+        height: 534px;
+        padding: 30px 50px;
+    }
+}
+
+@media(max-width: 1025px) {
+
+    .settings__charity__text h3 {
+        font-size: 12px;
+    }
+
+    .addition__additional-services td {
+        font-size: 10px;
+    }
+
+    .settings__cleaning-type div a,
+    .addition__total div:nth-child(2) a {
+        font-size: 10px;
+    }
+
+    .addition__total div:nth-child(2) button {
+        width: 130px;
+        font-size: 13px;
+
+    }
+
+    .addition__total-title {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 874px) {
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        margin: 14px auto;
+        padding: 24px 20px;
+        height: 1030px;
+    }
+
+    .settings,
+    .addition {
+        height: 100%;
+        width: 100%;
+    }
+
+    .settings__charity__text h3 {
+        font-size: 20px;
+    }
+
+    .settings__charity__text p {
+        font-size: 16px;
+    }
+
+    .settings__charity {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 634px) {
+    .settings__charity__text h3 {
+        font-size: 16px;
+    }
+
+    .settings__charity__text p {
+        font-size: 12px;
+    }
+
+    .settings__charity__text {
+        padding: 14px 13px 0;
+    }
+
+    .settings__charity {
+        margin-bottom: 0px;
+    }
+
+    .settings__cleaning-type,
+    .settings__room-area {
+        margin-bottom: 24px;
+    }
+
+    .main {
+        height: 965px;
+    }
+}
+
+@media (max-width: 595px) {
+
+    label {
+        font-size: 16px;
+    }
+
+    .main {
+        height: 935px;
+    }
+}
+
+@media (max-width: 452px) {
+
+    .settings__charity {
+        flex-direction: column-reverse;
+        margin-bottom: 16px;
+        border-radius: 16px;
+    }
+
+    .settings__charity__img {
+        width: 100%;
+    }
+
+    .settings__charity__text {
+        padding: 12px 13px;
+        width: 90%;
+    }
+
+    .settings__room-area label {
+        margin-bottom: 0px;
+    }
+
+    .room-area__input-2 {
+        width: 30px;
+        padding: 10px 12px;
+        margin-right: 8px;
+    }
+
+    .area-range {
+        margin-right: 16px;
+    }
+
+    .addition__additional-services tr td:first-child {
+        width: 50%;
+    }
+
+    .main {
+        height: 1100px;
+    }
+
+    .settings__charity__img img {
+        border-radius: 16px;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание html-верстальщик/Пещенкова Мария</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="settings">
+            <form class="settings__cleaning-type">
+                <label for="cleaning-type-select">Тип уборки:</label>
+                <select id="cleaning-type-select" name="cleaning-type" onchange="changeCleaningType()">
+                    <option value="maintenance-cleaning">Поддерживающая уборка</option>
+                    <option value="spring-cleaning">Генеральная уборка</option>
+                    <option value="cleaning-after-repair">Уборка после ремонта</option>
+                </select>
+                <div>Ставка:&nbsp;<span id="bid">70 руб./м²</span><a href="#">ЧТО ВХОДИТ?</a></div>
+            </form>
+            <form class="settings__room-area">
+                <label for="room-area">Площадь помещения:</label>
+                <div class="room-area__container">
+                    <div class="area-range"><input type="range" id="room-area" class="room-area__input" name="room-area"
+                            min="0" max="800" value="0" step="1" onchange="changeRoomArea()">
+                        <div class="area-range__titles"><span>от 0</span><span>до 800</span></div>
+                    </div>
+                    <div class="area-input"><input type="number" id="room-area-2" class="room-area__input-2"
+                            onchange="changeRoomArea2()"><span>м²</span></div>
+                </div>
+            </form>
+            <section class="settings__charity">
+                <div class="settings__charity__text">
+                    <h3>Совершая заказ у нас, Вы помогаете детям!</h3>
+                    <p>Часть вырученных средств идёт на помощь детскому дому.</p>
+                </div>
+                <div class="settings__charity__img"><img src="image.png" alt="image"></div>
+            </section>
+        </div>
+        <div class="addition">
+            <div class="addition__additional-services">
+                <label>Дополнительные услуги:</label>
+                <table id="additional-services-table">
+                </table>
+            </div>
+            <div class="addition__total">
+                <div>
+                    <p class="addition__total-title">Итого:</p>
+                    <p class="addition__total-value" id="total-value"></p>
+                </div>
+                <div><a href="#">ПОСЧИТАТЬ ЗА МЕНЯ</a><button>Заказать</button></div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
